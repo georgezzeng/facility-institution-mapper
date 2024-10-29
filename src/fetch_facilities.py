@@ -1,5 +1,5 @@
 import os
-
+import pandas as pd
 import yaml
 
 
@@ -23,7 +23,8 @@ def get_facilities(repo="topology"):
                     "FacilityName": facility_name,
                     "InstitutionID": institution_id
                 })
-    return facilities
+    return pd.DataFrame(facilities)
+
 
 
 
