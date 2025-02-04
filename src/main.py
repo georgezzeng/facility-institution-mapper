@@ -17,8 +17,8 @@ def main():
     df = combine_facilities_and_institutions(facilities_dict, institutions_dict)
 
     df = compare_names(df)
-    count = df["same_name"].value_counts()
-    print(count)
+    # count = df["same_name"].value_counts()
+    # print(count)
     shared_institution(df).to_csv("data/facility_institution_matcher.csv", index=False)
     # facilities_df = get_facilities()
     #
