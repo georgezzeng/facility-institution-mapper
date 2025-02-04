@@ -19,7 +19,7 @@ def main():
     df = compare_names(df)
     # count = df["same_name"].value_counts()
     # print(count)
-    shared_institution(df).to_csv("data/facility_institution_matcher.csv", index=False)
+    shared_institution(df).to_excel("data/facility_institution_matcher.xlsx", index=False)
     # facilities_df = get_facilities()
     #
     # facilities_df = compare_names_and_check_shared_ids(facilities_df, institutions)
